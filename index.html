@@ -1,13 +1,149 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
+    <!-- 1. Metas de Rendimiento y Técnicas (Obrigatório ser o primeiro) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer-when-downgrade">
     
-    <!-- Título base (Otimizaremos os metadados completos no próximo passo) -->
+    <!-- 2. Preconnect, DNS-Prefetch y Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preload" as="image" href="https://wortex-org.vercel.app/wortex-mexico.png">
+
+    <!-- 3. SEO Básico y Palabras Clave Extraídas -->
     <title>Wortex en México - Limpieza Digestiva y Bienestar Natural</title>
-    
+    <meta name="description" content="Descubre Wortex, el suplemento natural líder en México para la limpieza digestiva, desintoxicación y protección de tu flora intestinal. Pago contra entrega.">
+    <meta name="keywords" content="Wortex, comprar Wortex en México, precio Wortex, limpieza digestiva, desintoxicación natural, sistema inmunológico, flora intestinal, suplemento natural México, purificar el organismo, defensas, pago contra entrega">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- 4. Canonical y Hreflang -->
+    <link rel="canonical" href="https://wortex-org.vercel.app/">
+    <link rel="alternate" hreflang="es-MX" href="https://wortex-org.vercel.app/">
+    <link rel="alternate" hreflang="x-default" href="https://wortex-org.vercel.app/">
+
+    <!-- 5. Metas de Entrega y Devolución -->
+    <meta name="delivery-time" content="2-7 days">
+    <meta name="return-policy" content="30 days">
+
+    <!-- 6. Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Wortex en México - Limpieza Digestiva y Bienestar Natural">
+    <meta property="og:description" content="Protege a tu familia y recupera tu energía con Wortex. Suplemento natural para limpieza digestiva. ¡50% de descuento y pago al recibir!">
+    <meta property="og:url" content="https://wortex-org.vercel.app/">
+    <meta property="og:image" content="https://wortex-org.vercel.app/wortex-mexico.png">
+    <meta property="og:image:alt" content="Frasco original de Wortex cápsulas">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Wortex México">
+    <meta property="product:price:amount" content="590.00">
+    <meta property="product:price:currency" content="MXN">
+
+    <!-- 7. Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wortex en México - Limpieza Digestiva Natural">
+    <meta name="twitter:description" content="Recupera tu bienestar y energía con Wortex. Oferta 50% OFF y pago contra entrega en todo México.">
+    <meta name="twitter:image" content="https://wortex-org.vercel.app/wortex-mexico.png">
+
+    <!-- 8. JSON-LD Completo: Website, Product, Offer (Shipping/Returns) y FAQ -->
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Wortex México",
+            "url": "https://wortex-org.vercel.app/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://wortex-org.vercel.app/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Wortex",
+            "image": "https://wortex-org.vercel.app/wortex-mexico.png",
+            "description": "Wortex es una fórmula natural avanzada creada a partir de extractos botánicos de alta pureza, diseñada para apoyar la limpieza digestiva, desintoxicar el organismo y fortalecer las defensas en México.",
+            "sku": "WTX-MX-01",
+            "brand": {
+                "@type": "Brand",
+                "name": "Wortex"
+            },
+            "offers": {
+                "@type": "Offer",
+                "url": "https://wortex-org.vercel.app/",
+                "priceCurrency": "MXN",
+                "price": "590.00",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "Wortex México"
+                },
+                "shippingDetails": {
+                    "@type": "OfferShippingDetails",
+                    "shippingRate": {
+                        "@type": "MonetaryAmount",
+                        "value": "0.00",
+                        "currency": "MXN"
+                    },
+                    "deliveryTime": {
+                        "@type": "ShippingDeliveryTime",
+                        "transitTime": {
+                            "@type": "QuantitativeValue",
+                            "minValue": 2,
+                            "maxValue": 7,
+                            "unitCode": "d"
+                        }
+                    }
+                },
+                "hasMerchantReturnPolicy": {
+                    "@type": "MerchantReturnPolicy",
+                    "applicableCountry": "MX",
+                    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                    "merchantReturnDays": 30,
+                    "returnMethod": "https://schema.org/ReturnByMail",
+                    "returnFees": "https://schema.org/FreeReturn"
+                }
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿Cuánto tiempo tarda en hacer efecto?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "La mayoría de los usuarios reportan sentirse más ligeros y con mayor energía durante las primeras dos semanas de uso constante, a medida que el cuerpo completa su ciclo de limpieza natural."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Cómo funciona la entrega y el método de pago en México?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Para tu total seguridad y comodidad, en México operamos con la modalidad de Pago Contra Entrega. Esto significa que haces tu pedido en línea de forma segura y solo pagas en efectivo cuando el repartidor te entrega el producto en tus manos. ¡Sin riesgos ni tarjetas!"
+                    }
+                }
+            ]
+        }
+    ]
+    </script>
+
+    <!-- 9. Microsoft Clarity (Isolado no final do bloco de SEO) -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "yhqcz7lnwh");
+    </script>
+
+    <!-- 10. Estilos CSS -->
     <style>
         /* Variáveis de Cores baseadas na página original do Wortex */
         :root {
@@ -352,7 +488,7 @@
         </header>
 
         <main>
-            <!-- H1 otimizado (Foco em Limpeza e Bem-estar em vez de "matar parasitas") -->
+            <!-- H1 otimizado (Foco em Limpeza e Bem-estar en vez de "matar parasitas") -->
             <h1>Recupera tu bienestar y limpieza digestiva de forma natural con Wortex</h1>
             
             <p>En México, mantener un sistema digestivo limpio y protegido es fundamental para disfrutar de una vida llena de energía. Muchas veces, el cansancio constante, las molestias estomacales y la falta de vitalidad son señales de que nuestro cuerpo necesita una depuración profunda.</p>
@@ -361,7 +497,7 @@
             <!-- Produto Principal -->
             <div class="image-container">
                 <!-- IMMAGINE DEL PRODOTTO: Substitua pelo nome do seu arquivo recortado -->
-                <img src="wortex.png" alt="Frasco original de Wortex cápsulas en México">
+                <img src="wortex-mexico.png" alt="Frasco original de Wortex cápsulas en México">
                 <div class="image-caption">Fórmula natural protectora para el cuidado de tu cuerpo.</div>
             </div>
 
